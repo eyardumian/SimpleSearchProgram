@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.browseButton = new System.Windows.Forms.Button();
+            this.searchLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -49,11 +50,21 @@
             this.browseButton.Text = "Browse";
             this.browseButton.UseVisualStyleBackColor = true;
             // 
+            // searchLabel
+            // 
+            this.searchLabel.AutoSize = true;
+            this.searchLabel.Location = new System.Drawing.Point(102, 134);
+            this.searchLabel.Name = "searchLabel";
+            this.searchLabel.Size = new System.Drawing.Size(181, 13);
+            this.searchLabel.TabIndex = 2;
+            this.searchLabel.Text = "Enter a word/sentence to search for:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.browseButton);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -67,6 +78,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button browseButton;
+        private System.Windows.Forms.Label searchLabel;
     }
 }
 
