@@ -33,6 +33,7 @@
             this.searchLabel = new System.Windows.Forms.Label();
             this.SearchTextBox = new System.Windows.Forms.TextBox();
             this.ListBoxResults = new System.Windows.Forms.ListBox();
+            this.searchButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -76,11 +77,21 @@
             this.ListBoxResults.Size = new System.Drawing.Size(240, 147);
             this.ListBoxResults.TabIndex = 4;
             // 
+            // searchButton
+            // 
+            this.searchButton.Location = new System.Drawing.Point(105, 203);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.TabIndex = 5;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.searchButton);
             this.Controls.Add(this.ListBoxResults);
             this.Controls.Add(this.SearchTextBox);
             this.Controls.Add(this.searchLabel);
@@ -100,6 +111,7 @@
         private System.Windows.Forms.Label searchLabel;
         private System.Windows.Forms.TextBox SearchTextBox;
         private System.Windows.Forms.ListBox ListBoxResults;
+        private System.Windows.Forms.Button searchButton;
     }
 }
 
