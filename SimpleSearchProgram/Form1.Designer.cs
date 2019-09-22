@@ -34,6 +34,7 @@
             this.SearchTextBox = new System.Windows.Forms.TextBox();
             this.ListBoxResults = new System.Windows.Forms.ListBox();
             this.searchButton = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // label1
@@ -52,6 +53,7 @@
             this.browseButton.TabIndex = 1;
             this.browseButton.Text = "Browse";
             this.browseButton.UseVisualStyleBackColor = true;
+            this.browseButton.Click += new System.EventHandler(this.browseButton_Click);
             // 
             // searchLabel
             // 
@@ -85,6 +87,11 @@
             this.searchButton.TabIndex = 5;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "Filename";
             // 
             // Form1
             // 
@@ -107,11 +114,12 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button browseButton;
         private System.Windows.Forms.Label searchLabel;
         private System.Windows.Forms.TextBox SearchTextBox;
         private System.Windows.Forms.ListBox ListBoxResults;
         private System.Windows.Forms.Button searchButton;
+        public System.Windows.Forms.Button browseButton;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
