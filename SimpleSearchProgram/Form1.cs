@@ -19,6 +19,7 @@ namespace SimpleSearchProgram
             InitializeComponent();
         }
 
+        //Browse and select a file to open.
         private void browseButton_Click(object sender, EventArgs e)
         {
             //Clear the ListBox for a new search.
@@ -36,14 +37,15 @@ namespace SimpleSearchProgram
             }
         }
 
+        //Search the file for words.
         private void searchButton_Click(object sender, EventArgs e)
         {
-            
-           StreamReader sr = new StreamReader(path: file);
-            while(!sr.EndOfStream)
+           StreamReader inputFile = new StreamReader(path: file);
+            //Search until the end of the file.
+            while(!inputFile.EndOfStream)
             {
                 //Read each line of file.
-                var line = sr.ReadLine();
+                var line = inputFile.ReadLine();
                 if (String.IsNullOrEmpty(line)) continue;
                 //Search for word.
                 if (line.IndexOf(SearchTextBox.Text, StringComparison.CurrentCultureIgnoreCase) >= 0)
